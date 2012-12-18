@@ -1,0 +1,8 @@
+﻿<Window x:Class="iTunesAdjuster.CommentSettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="iTunesAdjuster - コメントを一括設定する" Height="300" Width="300">
+    <Grid>
+        
+    </Grid>
+</Window>
