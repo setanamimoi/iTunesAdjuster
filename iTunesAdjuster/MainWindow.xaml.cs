@@ -64,6 +64,16 @@ namespace iTunesAdjuster
 
         private void commentSettingButton_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                this.IsEnabled = false;
+
+                new CommentSettingWindow().ShowDialog();
+            }
+            finally
+            {
+                this.IsEnabled = true;
+            }
         }
 
         private void playlistTrackSortButton_Click(object sender, RoutedEventArgs e)
