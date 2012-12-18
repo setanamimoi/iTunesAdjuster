@@ -62,6 +62,10 @@ namespace iTunesAdjuster
             });
         }
 
+        private void commentSettingButton_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
         private void playlistTrackSortButton_Click(object sender, RoutedEventArgs e)
         {
             try
