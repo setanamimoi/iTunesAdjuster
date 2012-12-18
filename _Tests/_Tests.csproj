@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75DAD6B4-AEC6-428C-A496-A7BBB265493F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_Tests</RootNamespace>
+    <AssemblyName>_Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Moq, Version=4.0.10827.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit-gui-runner, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>NUnit\lib\nunit-gui-runner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>NUnit\framework\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_IEnumerable\OrderBy.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_IITSource\GetUserPlaylists.cs" />
+    <Compile Include="_IITUserPlaylist\AddRangeTracks.cs" />
+    <Compile Include="_LibraryPlaylist\GetCommentedTracks.cs" />
+    <Compile Include="_RequireAttribute\Validate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NUnit\agent.conf" />
+    <None Include="NUnit\agent.log.conf" />
+    <None Include="NUnit\launcher.log.conf" />
+    <None Include="NUnit\nunit-agent-x86.exe.config" />
+    <None Include="NUnit\nunit-agent.exe.config" />
+    <None Include="NUnit\nunit-console-x86.exe.config" />
+    <None Include="NUnit\nunit-console.exe.config" />
+    <None Include="NUnit\nunit-x86.exe.config" />
+    <None Include="NUnit\nunit.exe.config" />
+    <None Include="NUnit\NUnitTests.config" />
+    <None Include="NUnit\NUnitTests.nunit" />
+    <None Include="NUnit\pnunit-agent.exe.config" />
+    <None Include="NUnit\pnunit-launcher.exe.config" />
+    <None Include="NUnit\runpnunit.bat" />
+    <None Include="NUnit\test.conf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Moq.dll" />
+    <Content Include="NUnit\framework\nunit.framework.dll" />
+    <Content Include="NUnit\framework\nunit.framework.xml" />
+    <Content Include="NUnit\framework\nunit.mocks.dll" />
+    <Content Include="NUnit\framework\pnunit.framework.dll" />
+    <Content Include="NUnit\lib\Images\Ellipsis.gif" />
+    <Content Include="NUnit\lib\Images\pinned.gif" />
+    <Content Include="NUnit\lib\Images\Tree\Circles\Failure.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Circles\Ignored.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Circles\Inconclusive.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Circles\Skipped.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Circles\Success.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Classic\Failure.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Classic\Ignored.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Classic\Inconclusive.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Classic\Skipped.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Classic\Success.jpg" />
+    <Content Include="NUnit\lib\Images\Tree\Default\Failure.png" />
+    <Content Include="NUnit\lib\Images\Tree\Default\Ignored.png" />
+    <Content Include="NUnit\lib\Images\Tree\Default\Inconclusive.png" />
+    <Content Include="NUnit\lib\Images\Tree\Default\Skipped.png" />
+    <Content Include="NUnit\lib\Images\Tree\Default\Success.png" />
+    <Content Include="NUnit\lib\Images\Tree\Visual Studio\Failure.png" />
+    <Content Include="NUnit\lib\Images\Tree\Visual Studio\Ignored.png" />
+    <Content Include="NUnit\lib\Images\Tree\Visual Studio\Inconclusive.png" />
+    <Content Include="NUnit\lib\Images\Tree\Visual Studio\SeriousWarning.png" />
+    <Content Include="NUnit\lib\Images\Tree\Visual Studio\Skipped.png" />
+    <Content Include="NUnit\lib\Images\Tree\Visual Studio\Success.png" />
+    <Content Include="NUnit\lib\Images\unpinned.gif" />
+    <Content Include="NUnit\lib\log4net.dll" />
+    <Content Include="NUnit\lib\NSubstitute.dll" />
+    <Content Include="NUnit\lib\NSubstitute.xml" />
+    <Content Include="NUnit\lib\nunit-console-runner.dll" />
+    <Content Include="NUnit\lib\nunit-gui-runner.dll" />
+    <Content Include="NUnit\lib\nunit.core.dll" />
+    <Content Include="NUnit\lib\nunit.core.interfaces.dll" />
+    <Content Include="NUnit\lib\nunit.uiexception.dll" />
+    <Content Include="NUnit\lib\nunit.uikit.dll" />
+    <Content Include="NUnit\lib\nunit.util.dll" />
+    <Content Include="NUnit\lib\Rhino.Mocks.dll" />
+    <Content Include="NUnit\lib\Rhino.Mocks.xml" />
+    <Content Include="NUnit\nunit-agent-x86.exe" />
+    <Content Include="NUnit\nunit-agent.exe" />
+    <Content Include="NUnit\nunit-console-x86.exe" />
+    <Content Include="NUnit\nunit-console.exe" />
+    <Content Include="NUnit\nunit-editor.exe" />
+    <Content Include="NUnit\nunit-x86.exe" />
+    <Content Include="NUnit\nunit.exe" />
+    <Content Include="NUnit\nunit.framework.dll" />
+    <Content Include="NUnit\NUnitFitTests.html" />
+    <Content Include="NUnit\pnunit-agent.exe" />
+    <Content Include="NUnit\pnunit-launcher.exe" />
+    <Content Include="NUnit\pnunit.framework.dll" />
+    <Content Include="NUnit\pnunit.tests.dll" />
+    <Content Include="NUnit\tests\mock-assembly.dll" />
+    <Content Include="NUnit\tests\nonamespace-assembly.dll" />
+    <Content Include="NUnit\tests\nunit-console.tests.dll" />
+    <Content Include="NUnit\tests\nunit-editor.tests.dll" />
+    <Content Include="NUnit\tests\nunit-gui.tests.dll" />
+    <Content Include="NUnit\tests\nunit.core.tests.dll" />
+    <Content Include="NUnit\tests\nunit.core.tests.net45.dll" />
+    <Content Include="NUnit\tests\nunit.framework.dll" />
+    <Content Include="NUnit\tests\nunit.framework.tests.dll" />
+    <Content Include="NUnit\tests\nunit.mocks.tests.dll" />
+    <Content Include="NUnit\tests\nunit.uiexception.tests.dll" />
+    <Content Include="NUnit\tests\nunit.uikit.tests.dll" />
+    <Content Include="NUnit\tests\nunit.util.tests.dll" />
+    <Content Include="NUnit\tests\test-assembly-net45.dll" />
+    <Content Include="NUnit\tests\test-assembly.dll" />
+    <Content Include="NUnit\tests\test-utilities.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iTunesAdjuster\iTunesAdjuster.csproj">
+      <Project>{0b2198aa-1325-4878-a982-34774b0ff701}</Project>
+      <Name>iTunesAdjuster</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="iTunesLib">
+      <Guid>{9E93C96F-CF0D-43F6-8BA8-B807A3370712}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>13</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

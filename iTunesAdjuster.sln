@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Tests", "_Tests\_Tests.csproj", "{75DAD6B4-AEC6-428C-A496-A7BBB265493F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iTunesAdjuster", "iTunesAdjuster\iTunesAdjuster.csproj", "{0B2198AA-1325-4878-A982-34774B0FF701}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75DAD6B4-AEC6-428C-A496-A7BBB265493F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75DAD6B4-AEC6-428C-A496-A7BBB265493F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75DAD6B4-AEC6-428C-A496-A7BBB265493F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75DAD6B4-AEC6-428C-A496-A7BBB265493F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B2198AA-1325-4878-A982-34774B0FF701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2198AA-1325-4878-A982-34774B0FF701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2198AA-1325-4878-A982-34774B0FF701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2198AA-1325-4878-A982-34774B0FF701}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

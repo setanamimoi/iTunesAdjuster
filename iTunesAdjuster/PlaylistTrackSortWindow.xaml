@@ -1,0 +1,17 @@
+﻿<Window x:Class="iTunesAdjuster.PlaylistTrackSortWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="iTunesAdjuster - プレイリストのトラックを並び替える" Height="300" Width="300">
+    <Grid>
+        <DockPanel>
+            <Button Name="sortButton" Content="並び替える" Click="sortButton_Click"  DockPanel.Dock="Bottom" Height="40" />
+            <ListView Name="playlistSortListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <CheckBox Content="{Binding Path=Name}" IsChecked="{Binding Path=IsChecked}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </DockPanel>
+    </Grid>
+</Window>
