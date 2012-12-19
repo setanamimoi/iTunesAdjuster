@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArgumentValidators\ArgumentValidator.cs" />
+    <Compile Include="CommentSettingWindow.xaml.cs">
+      <DependentUpon>CommentSettingWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Extentions.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -96,6 +99,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="CommentSettingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

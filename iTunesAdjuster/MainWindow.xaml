@@ -1,9 +1,10 @@
 ﻿<Window x:Class="iTunesAdjuster.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="iTunesAdjuster" Height="133" Width="323" MinHeight="133" MinWidth="323">
+        Title="iTunesAdjuster" Height="182" Width="323" MinHeight="133" MinWidth="323">
     <Grid>
         <StackPanel>
+            <Button Name="commentSettingButton" Content="コメントを一括設定する..." Click="commentSettingButton_Click" Width="315" Height="50" />
             <Button Name="playlistGenerateButton" Content="プレイリストを自動生成する" Click="playlistGenerateButton_Click" Width="315" Height="50" />
             <Button Name="playlistTrackSortButton" Content="プレイリストのトラックをソートする..." Click="playlistTrackSortButton_Click" Width="315" Height="50" />
         </StackPanel>
